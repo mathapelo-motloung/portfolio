@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Contact Me
+		</title>
 		<link rel="stylesheet" href="css/index.css">
 		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
 		<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
 
-
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<script type="text/javascript" src="js/index.js"></script>
 
 	</head>
@@ -16,6 +17,7 @@
 			<li><a href="index.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="contact.html">Contact</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
 		</ul>
 		</nav>
 		
@@ -25,22 +27,36 @@
 		</div>
 		<div class="right">
 			<div class="contact_form">
-				<form action="#">
+				<form action="http://formspree.io/mathapelo886@gmail.com" enctype="multipart/form-data" method="POST">
     
 					<input type="text" id="name" name="name" placeholder="Your Name">
 					<input type="text" id="email" name="email" placeholder="Your Email">
-					<textarea id="subject" name="subject" placeholder="Your Comment" style="height:200px"></textarea>
+					<input type="text"id="subject" name="subject" placeholder="Subject">
+					<textarea type="text" id="message" style="height:200px"name="message" placeholder="Your comment"></textarea>
+					
 					<input type="submit" value="Send Message">
 				</form>
-			</div>
+				<!-- <form action="https://getform.io/f/4d587f1f-d14b-49e3-85f2-69738a508cb2""http://formspree.io/mathapelo886@gmail.com" method="POST">
+
+    <input type="text" name="name" placeholder="Name">
+    <input type="email" name="email"placeholder="Email">
+    <textarea id="subject" name="subject" placeholder="Your Comment" style="height:200px"></textarea>
+    <input type="tel" name="tel" placeholder="Tel">
+    <input type="file" name="file"> 
+    <button type="submit">Send</button>
+	</form>--> 
 		</div>
 		
 		</article>
 
 		<footer id="pageFooter">
-			&copy 2017 Plug.All rights reserved<br>
-			Designed by Khutso<br>
-			Coded by Mathapelo
+			<center>
+				<p>&copy 2019 
+				Coded by Mathapelo Motloung</p>
+			
+				<a class="portfolio-links" href="https://www.linkedin.com/in/mathapelo-motloung-b4a857120"><i  class="fab fa-linkedin"></i></a>
+				<a class="portfolio-links" href="https://github.com/2gdbklkr2"><i class="fab fa-github"></i></a>
+			</center>
 		</footer>
 	</body>
 </html>
