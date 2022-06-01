@@ -5,58 +5,55 @@
 		</title>
 		<link rel="stylesheet" href="css/index.css">
 		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-		<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
-
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 		<script type="text/javascript" src="js/index.js"></script>
 
 	</head>
 	<body>
-		<nav id="mainNav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-		</ul>
+
+		<nav class="navbar navbar-light bg-light" id="mainNav">
+			<div class="container-fluid"id="menu" >
+			  <a class="navbar-brand" href="index.html">Home</a>
+			  <a class="navbar-brand" href="about.html">About</a>
+			  <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+			  <a class="navbar-brand" href="contact.html">Contact</a>
+			</div>
 		</nav>
-		
-		<article ="mainArticle">
-		<div class="left">
-				<h3>Contact Info:</h3>
-		</div>
-		<div class="right">
-			<div class="contact_form">
-				<form action="https://getform.io/f/4d587f1f-d14b-49e3-85f2-69738a508cb2" enctype="multipart/form-data" method="POST">
-    
-					<input type="text" id="name" name="name" placeholder="Your Name">
-					<input type="text" id="email" name="email" placeholder="Your Email">
-					<input type="text"id="subject" name="subject" placeholder="Subject">
-					<textarea type="text" id="message" style="height:200px"name="message" placeholder="Your comment"></textarea>
-					
-					<input type="submit" value="Send Message">
-				</form>
-				<!-- <form action="https://getform.io/f/4d587f1f-d14b-49e3-85f2-69738a508cb2""http://formspree.io/mathapelo886@gmail.com" method="POST">
-
-    <input type="text" name="name" placeholder="Name">
-    <input type="email" name="email"placeholder="Email">
-    <textarea id="subject" name="subject" placeholder="Your Comment" style="height:200px"></textarea>
-    <input type="tel" name="tel" placeholder="Tel">
-    <input type="file" name="file"> 
-    <button type="submit">Send</button>
-	</form>--> 
-		</div>
-		
-		</article>
-
-		<footer id="pageFooter">
-			<center>
-				<p>&copy 2019 
-				Coded by Mathapelo Motloung</p>
-			
+		<div id="pageHeader" class="bg-image shadow-2-strong">
+			<div class="mask">
+			  <div class="container d-flex align-items-center justify-content-center text-center h-100">
+				<div class="text-white">
+				  <h1 class="mb-3">Mathapelo Motloung</h1>
+				  <h5 class="mb-4" id="typewriter"></h5>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		<main class="mt-5">
+			<div class="container">
+			  <!--Section: Content-->
+			  <section>
+				<div class="row">
+					<div class="col-lg-4 col-md-12 mb-4">
+						<div class="contact">
+							<h3>Contact Info:</h3>
+							<p><i class="fa fa-envelope" ></i> &nbsp;mathapelo886 [at] gmail [dot] com</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			</div>
+		</main>
+		<footer id="pageFooter" class="bg-dark text-lg-start">
+			<div class="container align-items-center justify-content-center text-center h-100">
+			  <p>&copy 2021 Mathapelo Motloung</p>
+			  <div class="icons">
 				<a class="portfolio-links" href="https://www.linkedin.com/in/mathapelo-motloung-b4a857120"><i  class="fab fa-linkedin"></i></a>
-				<a class="portfolio-links" href="https://github.com/2gdbklkr2"><i class="fab fa-github"></i></a>
-			</center>
+			  <a class="portfolio-links" href="https://github.com/mathapelo-motloung"><i class="fab fa-github"></i></a>
+			  </div>
+			  
+			</div>
 		</footer>
 	</body>
 </html>

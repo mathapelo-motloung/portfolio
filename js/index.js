@@ -1,5 +1,5 @@
 var i=0;
-var txt="A full stack web developer that develops web solutions to improve people's lives and take businesses to the next level";
+var txt="Full Stack Developer";
 var speed=100;
 
 window.onload=function typeWriter(){

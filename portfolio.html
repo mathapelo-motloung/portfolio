@@ -1,121 +1,355 @@
 <!DOCTYPE html>
 <html>
-	<head>
+	<head> 
+    <title>Portfolio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-          
-        <title>Portfolio</title>
 		<link rel="stylesheet" href="css/index.css">
-		<script type="text/javascript" src="js/index.js"></script>
-        <meta charset="utf-8">
 		<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet'>
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
- 		<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
-  		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 		<script type="text/javascript" src="js/index.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
 	</head>
 	
 	<body>
-		<nav id="mainNav">
-		<ul>
-			<li>
-				<a href="index.html">Home</a
-			</li>
-			<li>
-				<a href="about.html">About</a>
-			</li>
-			<li>
-				<a href="portfolio.html">Portfolio</a>
-			</li>
-			<li>
-				<a href="contact.html">Contact</a>
-			</li>
-		</ul>
+		<nav class="navbar navbar-light bg-light" id="mainNav">
+			<div class="container-fluid" id="menu">
+			  <a class="navbar-brand" href="index.html">Home</a>
+			  <a class="navbar-brand" href="about.html">About</a>
+			  <a class="navbar-brand" href="portfolio.html">Portfolio</a>
+			  <a class="navbar-brand" href="contact.html">Contact</a>
+			</div>
 		</nav>
-		<header id="pageHeader" style="background-color:#383334; color:#fff;">
-			<center><h1>Mathapelo Motloung</h1></center>
-			<center><p id="typewriter"></p></center>
-
-		</header>
-		<!--<div id="info">-->
+		<div id="pageHeader" class="bg-image shadow-2-strong">
+			<div class="mask">
+			  <div class="container d-flex align-items-center justify-content-center text-center h-100">
+				<div class="text-white">
+				  <h1 class="mb-3">Mathapelo Motloung</h1>
+				  <h5 class="mb-4" id="typewriter"></h5>
+				</div>
+			  </div>
+			</div>
 		</div>
-		<article id="mainArticle" style="padding-left:13%;padding-right:5%">
-		<!-- <a href="https://2gdbklkr2.github.io/tribute/">Tribute Page</a><br> -->
-		
-		
-		
-		<div class="row">
-		<div class="card">
-  		<img src="img/tribute.png" alt="Avatar" style="width:100%">
-  		<div class="inner">
-    	<h4><a href="https://2gdbklkr2.github.io/tribute/">Tribute Page</a></h4> 
-    	<p>This page was built using HTML5, Javascript and CSS</p> 
-  		</div>
-		</div>
+		<main class="mt-5">
+			<div class="container">
+			  <!--Section: Content-->
+			  <section>
+				<div class="row">
+					<div class="col-lg-4 col-md-12 mb-4">
+					  <div class="card">
+						<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+						  <img src="img/recipe-app.png" class="img-fluid" id="portfolioImg" data-bs-toggle="modal" data-bs-target="#portfolioModal" />
+						  <a href="#!">
+							<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+						  </a>
+						</div>
+						<div class="card-body">
+						  <h5 class="card-title">Recipe App</h5>
+						  <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+						  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+							Details
+						  </button>
+						  
+						  <!-- Modal -->
+						  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-scrollable" role="document">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <h5 class="modal-title" id="exampleModalLabel">Recipe App</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+									<h5>Brief</h5>
+								  <h6>Functional Requirements</h6>
+									<ul>
+										<li>The recipe app displays a list of recipes and allows for adding new recipes.</li>
+									</ul>
+									<h6>Technologies/h6>
+									<ul>
+										<li>KeystoneJS (Headless CMS) and Angular 8 to create your application</li>
+										<li>Angular for front end of the application</li>
+										<li>Data models used to  pull information from an API endpoint</li>
+										<li>Task runner to compile & minify SCSS and JS files</li>
+										<li>NPM/Bower/Yarn to manage app dependencies</li>
+										<li>SCSS for CSS precompilation</li>
+									</ul>
+									
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							
+								</div>
+							  </div>
+							</div>
+						    </div>
+						</div>
+					  </div>
+					</div>
+					
+		  
+					<div class="col-lg-4 col-md-6 mb-4">
+					  <div class="card">
+						<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+						  <img src="img/toyota-connect.png" class="img-fluid" />
+						  <a href="https://www.toyota.co.za/my-toyota/toyota-connect">
+							<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+						  </a>
+						</div>
+						<div class="card-body">
+						  <h5 class="card-title"> <a href="https://www.toyota.co.za/my-toyota/toyota-connect">Toyota Connect</a></h5>
+						  <!-- <a href="#!" class="btn btn-primary">Button</a> -->
+						  <button type="button" class="btn btn-info" data-toggle="modal" data-target="#toyotaConnect">
+							Details
+						  </button>
+						  <!-- Modal -->
+						  <div class="modal fade" id="toyotaConnect" tabindex="-1" role="dialog" aria-labelledby="ModalLabel2" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-scrollable" role="document">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <h5 class="modal-title" id="ModalLabel2">Toyota Connect</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+								  <!-- <h5>Brief</h5> -->
+								  I had a great task of working on the Toyota website. I worked on the Toyota fortuner 4x4 challenge campagne page
+									and My Toyota Connect Page. I developed the user interfaces following a given design.
+								</br>
+								</br>
+					
+									<h6>Technologies</h6>
+									<ul>
+										<li>Please use  Angular 8 to create the pages</li>
+										<li>Please JSON/li>
+										<li>Please FileZilla</li>
+										<li>Please use a task runner to compile & minify SCSS and JS files</li>
+										<li>Please use NPM/Bower/Yarn to manage app dependencies</li>
+										<li>Please use SCSS for CSS precompilation</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+							
+								</div>
+							  </div>
+							</div>
+						    </div>
+						</div>
+					  </div>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+						  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="img/vba.png" class="img-fluid" />
+							<a href="#!">
+							  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						  </div>
+						  <div class="card-body">
+							<h5 class="card-title">Vehicle Breakdown Assistance</h5>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal3">
+							Details
+						  </button>
+						  <!-- Modal -->
+						  <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-scrollable" role="document">
+							  <div class="modal-content">
+								<div class="modal-header">
+								  <h5 class="modal-title" id="exampleModalLabel3">Vehicle Breakdown Assistance</h5>
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+								<div class="modal-body">
+								   Vehicle Breakdown Assistance is a web application that was built to assist users to search for and find mechanics
+									 within their location incase of a vehicle breakdown, or any other situation that would require the assistance of a mechanic.
+									 Mechanics are able to respond to the users request and indicate on the app if they will attend to the client. 
+									 Both the Mechanic and the Client are able to provide feedback on the app.
+										<br>
+									<h5>Technologies</h5>
+									<ul>
+										<li>Springboot</li>
+										<li>MySQL RDBMS</li>
+										<li>Jsp and Jstl</li>
+										<li>Hibernate ORM</li>
+										<li>Jenkins</li>
+									</ul>
+								</div>
+								<div class="modal-footer">
+								  <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+							
+								</div>
+							  </div>
+							</div>
+						    </div>
+						  </div>
+						</div>
+					  </div>
 
-		<div class="card">
-  		<img src="img/search-engine.png" alt="Avatar" style="width:100%">
-  		<div class="inner">
-    	<h4><a href="https://2gdbklkr2.github.io/search_engine/">Search Engine Landing Page</a></h4> 
-    	<p>This page was built using HTML5 and CSS</p> 
-  		</div>
-		</div>
-		</div>
-
-		<div class="row">
-		<div class="card">
-  		<img src="img/chatapp.png" alt="Avatar" style="width:100%">
-  		<div class="inner">
-    	<h4><a href="https://msachat.azurewebsites.net/">Simple Chat App</a></h4> 
-    	<p>This app was built using Nodejs, Express-Handlebars and Socket.io</p> 
-    	<h5>Challenge</h5> 
-    	<p>Build  Nodejs Socket.io application. The aim is to learn how web sockets work and build a small application using the Nodejs runtime environment. This application will then be hosted on a cloud platform. </p>
-    	<h5>Solution</h5>
-    	<p>Simple chat application that can send an receive messages.<p/>
-    	<p> This application is hosted on Microsoft Azure cloud platform</p>
-  		</div>
-		</div>
-
-		<div class="card">
-  		<img src="img/ecollab.png" alt="Avatar" style="width:100%">
-  		<div class="inner">
-    	<h4>eCollab</h4> 
-    	<p>This web application was built using Nodejs, MongoDB ,Express-pug</p>
-    	<h5>Challenge</h5> 
-    	<p>This was a hackathorn challenge on how we can improve collaboration using technology</p>
-    	<h5>The problem we solved</h5> 
-    	<p>As part of the agile movement, the daily scrum meeting is a very important part of agile development. The problem is that the meeting requires members to be there physically. So our solution was to remove the geographical restriction of being part of this meeting by automation the the daily scrum meeting.</p>
-  		</div>
-		</div>
-		</div>
-
-		<div class="row">
-		<div class="card">
-		<div class="inner">
-    	<h4>Recruitment Portal Project</h4> 
-    	<p>This is a python project where my responsibility is front-end development using HTML5 and Javascript. </p> 
-    	<h5>Problem</h5>  
-    	<p>The key problem areas with the current system is data redundency. This permits correction of errors in the stored data. Another problem was that the current system has no way of letting users know what tasks they have completed which leads to a repeatition of the same tasks. </p> 
-    	<h5>Solution</h5>
-    	<p>The Recruitment portal will solve the problem by storing none redundant data in a mysql database, removing anomalies and making sure that the data is normalised. The portal also has a dasboard that will guide users over a sequence of tasks that need to be completed. It will clearly state which tasks have been completed and which are yet to be completed.</p> 
-  		</div>
-  		</div>
-		</div>
-
-
-		<a download href="Mathapelo-Motloung-CV.pdf"><i class="fas fa-file-download"></i>Download CV</a>
-	</article>
-		</article>
-
-		<footer id="pageFooter">
-			<center>
-				<p>&copy 2019 
-				Coded by Mathapelo Motloung</p>
-			
-				<a class="portfolio-links" href="https://www.linkedin.com/in/mathapelo-motloung-b4a857120"><i  class="fab fa-linkedin"></i></a>
-				<a class="portfolio-links" href="https://github.com/2gdbklkr2"><i class="fab fa-github"></i></a>
-			</center>
+					  <div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+						  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="img/chatapp.png" class="img-fluid" />
+							<a href="#!">
+							  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						  </div>
+						  <div class="card-body">
+							<h5 class="card-title">Simple Chat App</h5>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal4">
+								Details
+							  </button>
+							  <!-- Modal -->
+							  <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+								<div class="modal-dialog modal-dialog-scrollable" role="document">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="exampleModalLabel4">Simple Chat App</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									  </button> 
+									</div>
+									<div class="modal-body">
+									 
+									Simple Socket.io Chat Application that can send and receive messages.
+									<h6>Technologies</h6>
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>NodeJS</li>
+										<li>Javascript</li>
+									</ul>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								
+									</div>
+								  </div>
+								</div>
+								</div>
+						  </div>
+						</div>
+					  </div>
+					  <div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+						  <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="img/ecollab.png" class="img-fluid" />
+							<a href="#!">
+							  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						  </div>
+						  <div class="card-body">
+							<h5 class="card-title">Ecollab</h5>
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal5">
+								Details
+							  </button>
+							  <!-- Modal -->
+							  <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="ModalLabel5" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="ModalLabel5">Ecollab</h5>
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+										<h6>Requirements</h6>
+										<ul>
+											<li>Improve collaboration using technology</li>
+										</ul>
+										<h6>Solution</h6>
+											<p>As part of the agile movement, the daily scrum meeting is a very important part of agile 
+												development. The problem is that the meeting requires members to be there physically. 
+												So our solution was to remove the geographical restriction of being part of this meeting 
+												by automating the the daily scrum meeting.</p>
+										<h6>Technologies</h6>
+										<ul>
+											<li>Angular as as front-end framework.</li>
+											<li>Springboot for serverside development.</li>
+											<li>Create the data models and pull information from an API endpoint</li>
+											<li>Please add a text search box to search for titles on the recipe page</li>
+											<li>Use mysql RDBMS</li>
+											<li>Jenkins</li>
+											<li>Please use SCSS for CSS precompilation</li>
+										</ul>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								
+									</div>
+								  </div>
+								</div>
+								</div>
+						  </div>
+						</div>
+					  </div>
+				
+					<div class="col-lg-4 col-md-6 mb-4">
+						<div class="card">
+						<div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+							<img src="img/tribute.png" class="img-fluid" />
+							<a href="https://mathapelo-motloung.github.io/tribute/">
+							<div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+							</a>
+						</div>
+						<div class="card-body">
+							<h5 class="card-title">Tribute Page</h5>
+							
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal6">
+								Details
+							  </button>
+							  <!-- Modal -->
+							  <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
+								<div class="modal-dialog" role="document">
+								  <div class="modal-content">
+									<div class="modal-header">
+									  <h5 class="modal-title" id="exampleModalLabel6">Tribute Page</h5>
+									  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+											<span aria-hidden="true">&times;</span>
+										</button>
+									</div>
+									<div class="modal-body">
+									  
+									Tribute Page for a Heroine
+									<h5>Technologies</h5>
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>Javascript</li>
+									</ul>
+									</div>
+									<div class="modal-footer">
+									  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+								
+									</div>
+								  </div>
+								</div>
+								</div>
+						</div>
+						</div>
+					</div>
+					</div>
+			  </section>
+			</div>
+		</main>
+		<footer id="pageFooter" class="bg-dark text-lg-start">
+			<div class="container align-items-center justify-content-center text-center h-100">
+			  <p>&copy 2021 Mathapelo Motloung</p>
+			  <a class="portfolio-links" href="https://www.linkedin.com/in/mathapelo-motloung-b4a857120"><i  class="fab fa-linkedin"></i></a>
+			  <a class="portfolio-links" href="https://github.com/mathapelo-motloung"><i class="fab fa-github"></i></a>
+			</div>
 		</footer>
 	</body>
 </html>
